@@ -30,6 +30,7 @@ public class CameraController : MonoBehaviour
         pivot.Rotate(-vertical, 0, 0);
 
         //limit up/down
+ 
         if(pivot.rotation.eulerAngles.x > 45f && pivot.rotation.eulerAngles.x < 180f)
         {
             pivot.rotation = Quaternion.Euler(45f, 0, 0);
@@ -39,6 +40,7 @@ public class CameraController : MonoBehaviour
         {
             pivot.rotation = Quaternion.Euler(315f, 0, 0);
         }
+        
 
         //move the camera based on current rotation of the target
         float desiredYAngle = player.eulerAngles.y;
