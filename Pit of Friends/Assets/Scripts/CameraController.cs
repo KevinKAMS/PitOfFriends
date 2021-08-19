@@ -12,8 +12,8 @@ public class CameraController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        pivot.transform.position = player.transform.position;
-        pivot.transform.parent = player.transform;
+        /*pivot.transform.position = player.transform.position;
+        pivot.transform.parent = player.transform;*/
 
         Cursor.lockState = CursorLockMode.Locked;
     }
