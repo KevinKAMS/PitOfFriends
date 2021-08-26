@@ -13,8 +13,8 @@ GameObject:
   - component: {fileID: 8513244659065063483}
   - component: {fileID: 8513244659065063480}
   - component: {fileID: 8513244659065063481}
-  - component: {fileID: 8513244659065063486}
-  - component: {fileID: 8513244659065063487}
+  - component: {fileID: -1295023735026548252}
+  - component: {fileID: -516880192865301843}
   m_Layer: 0
   m_Name: CubePlayer
   m_TagString: Untagged
@@ -114,7 +114,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &8513244659065063486
+--- !u!114 &-1295023735026548252
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -123,14 +123,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 8513244659065063484}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7017bf109d2b26b4e9b816f5d7ec276c, type: 3}
+  m_Script: {fileID: 11500000, guid: 9b91ecbcc199f4492b9a91e820070131, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movespeed: 10
-  jumpForce: 12
-  controller: {fileID: 0}
-  gravityScale: 0.02
---- !u!114 &8513244659065063487
+  sceneId: 0
+  serverOnly: 0
+  visible: 0
+  m_AssetId: a1c6e05ffe969634d8ebbdbfabb2ffd8
+  hasSpawned: 0
+--- !u!114 &-516880192865301843
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -139,6 +140,23 @@ MonoBehaviour:
   m_GameObject: {fileID: 8513244659065063484}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: daf8706cb62896f40b58e25d43a18477, type: 3}
+  m_Script: {fileID: 11500000, guid: 2f74aedd71d9a4f55b3ce499326d45fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  syncMode: 0
+  syncInterval: 0.1
+  clientAuthority: 0
+  sendInterval: 0.05
+  syncPosition: 1
+  syncRotation: 1
+  syncScale: 0
+  interpolatePosition: 1
+  interpolateRotation: 1
+  interpolateScale: 1
+  bufferTimeMultiplier: 3
+  bufferSizeLimit: 64
+  catchupThreshold: 6
+  catchupMultiplier: 0.1
+  showGizmos: 0
+  showOverlay: 0
+  overlayColor: {r: 0, g: 0, b: 0, a: 0.5}

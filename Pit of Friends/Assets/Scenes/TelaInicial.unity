@@ -1357,9 +1357,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1756564168}
-  - component: {fileID: 1756564167}
-  - component: {fileID: 1756564166}
   - component: {fileID: 1756564165}
+  - component: {fileID: 1756564166}
   - component: {fileID: 1756564169}
   m_Layer: 0
   m_Name: NetworkManager
@@ -1375,14 +1374,28 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1756564164}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6442dc8070ceb41f094e44de0bf87274, type: 3}
+  m_Script: {fileID: 11500000, guid: 79f1f31fb1284e6499270a0a908cda87, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  showGUI: 1
-  offsetX: 0
-  offsetY: 0
+  dontDestroyOnLoad: 1
+  PersistNetworkManagerToOfflineScene: 0
+  runInBackground: 1
+  autoStartServerBuild: 1
+  serverTickRate: 30
+  offlineScene: Assets/Scenes/TelaInicial.unity
+  onlineScene: Assets/Scenes/TelaPrincipal.unity
+  transport: {fileID: 1756564166}
+  networkAddress: localhost
+  maxConnections: 100
+  disconnectInactiveConnections: 0
+  disconnectInactiveTimeout: 60
+  authenticator: {fileID: 0}
+  playerPrefab: {fileID: 354282870877630332, guid: 7d7386665d6ddc0458a9b0d4ea036b5c, type: 3}
+  autoCreatePlayer: 1
+  playerSpawnMethod: 1
+  spawnPrefabs: []
 --- !u!114 &1756564166
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1408,35 +1421,6 @@ MonoBehaviour:
   debugLog: 0
   statisticsGUI: 0
   statisticsLog: 0
---- !u!114 &1756564167
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1756564164}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8aab4c8111b7c411b9b92cf3dbc5bd4e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dontDestroyOnLoad: 1
-  PersistNetworkManagerToOfflineScene: 0
-  runInBackground: 1
-  autoStartServerBuild: 1
-  serverTickRate: 30
-  offlineScene: Assets/Scenes/TelaInicial.unity
-  onlineScene: Assets/Scenes/TelaPrincipal.unity
-  transport: {fileID: 1756564166}
-  networkAddress: localhost
-  maxConnections: 100
-  disconnectInactiveConnections: 0
-  disconnectInactiveTimeout: 60
-  authenticator: {fileID: 0}
-  playerPrefab: {fileID: 354282870877630332, guid: 7d7386665d6ddc0458a9b0d4ea036b5c, type: 3}
-  autoCreatePlayer: 1
-  playerSpawnMethod: 1
-  spawnPrefabs: []
 --- !u!4 &1756564168
 Transform:
   m_ObjectHideFlags: 0

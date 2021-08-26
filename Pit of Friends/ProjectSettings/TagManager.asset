@@ -7,6 +7,9 @@ TagManager:
   - Ground
   - PlayerCamera
   - Pivot
+  - cube
+  - goal
+  - ball
   layers:
   - Default
   - TransparentFX

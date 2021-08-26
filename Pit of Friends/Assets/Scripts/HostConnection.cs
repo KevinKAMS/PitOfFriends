@@ -12,7 +12,7 @@ public class HostConnection : MonoBehaviour
 
     void Awake()
     {
-        manager = GetComponent<NetworkManager>();
+        manager = GetComponent<NewNetWorkManager>();
     }
 
     public void HostFunction()

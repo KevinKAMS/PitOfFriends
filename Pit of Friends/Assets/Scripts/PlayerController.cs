@@ -10,6 +10,7 @@ public class PlayerController : NetworkBehaviour
     public float gravity = 20.0F;
     public CharacterController controller;
     private Vector3 moveDirection = Vector3.zero;
+    public Rigidbody rigidbody3D;
     public override void OnStartLocalPlayer()
     {
         /*Camera.main.transform.SetParent(transform);
@@ -21,7 +22,6 @@ public class PlayerController : NetworkBehaviour
             Camera.main.GetComponent<CameraController>().enabled = false;
         }
     }
-    // Update is called once per frame
     void Update()
     {
         if(isLocalPlayer){
